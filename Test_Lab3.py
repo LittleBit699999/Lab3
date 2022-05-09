@@ -44,3 +44,8 @@ def test_bubble_sort_zero():
     assert (result == 0)
 
 
+def test_bubble_not_integer():
+    result = []
+    input_arr = [64.5, 34.2, 25.3, 12, 22, 11, 90, 12, 23, 32]
+    result = Lab3.bubble_sort(input_arr, 3)
+    assert (result == 3)
